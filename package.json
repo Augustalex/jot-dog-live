@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "dev": "node ./src/dev.js",
-    "server": "node ./src/server.js"
+    "server": "node ./src/server.js",
+    "proxy": "sudo npx local-ssl-proxy --config ./ssl-config.json"
   },
   "devDependencies": {
     "@types/bun": "latest"
