@@ -2,11 +2,7 @@ import {Server} from '@hocuspocus/server'
 import {SQLite} from '@hocuspocus/extension-sqlite'
 
 const server = Server.configure({
-    port: 443,
-    ssl: {
-        key: '/etc/letsencrypt/live/live.jot.dog/privkey.pem',
-        cert: '/etc/letsencrypt/live/live.jot.dog/fullchain.pem'
-    },
+    port: 1234,
 
     async onConnect() {
         console.log('Running server.')
