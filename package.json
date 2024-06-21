@@ -1,0 +1,17 @@
+{
+  "name": "jot-dog-live",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "server": "bun ./src/server"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@hocuspocus/server": "^2.13.2"
+  }
+}
