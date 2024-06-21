@@ -2,10 +2,10 @@ import {Server} from '@hocuspocus/server'
 import {SQLite} from '@hocuspocus/extension-sqlite'
 
 const server = Server.configure({
-    port: 80,
+    port: 1234,
 
     async onConnect() {
-        console.log('Running server.')
+        console.log('🔮')
     },
 
     extensions: [

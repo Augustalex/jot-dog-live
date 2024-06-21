@@ -3,6 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
+    "dev": "node ./src/dev.js",
     "server": "node ./src/server.js"
   },
   "devDependencies": {
@@ -12,6 +13,9 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@hocuspocus/server": "^2.13.2"
+    "@hocuspocus/extension-database": "^2.13.2",
+    "@hocuspocus/extension-sqlite": "^2.13.2",
+    "@hocuspocus/server": "^2.13.2",
+    "sqlite3": "^5.1.7"
   }
 }
