@@ -26,6 +26,16 @@ run_setup_script() {
   fi
 }
 
+# Run shutdown script to kill processes on ports 1234 and 3124
+SHUTDOWN_SCRIPT="/var/www/jot-dog-live/setup/shutdown.sh"
+if [ -f "$SHUTDOWN_SCRIPT" ]; then
+  echo "Running shutdown script to kill processes on ports 1234 and 3124..."
+  bash "$SHUTDOWN_SCRIPT"
+else
+  echo "Shutdown script not found: $SHUTDOWN_SCRIPT"
+  exit 1
+fi
+
 # Check if the project directory exists
 if [ ! -d "$PROJECT_DIR" ]; then
   echo "Project directory does not exist. Running initial setup..."
