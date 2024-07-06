@@ -1,9 +1,0 @@
-{
-  "JotDogLive": {
-    "source": 443,
-    "target": 1234,
-    "key": "/etc/letsencrypt/live/live.jot.dog/privkey.pem",
-    "cert": "/etc/letsencrypt/live/live.jot.dog/fullchain.pem",
-    "hostname": "live.jot.dog"
-  }
-}

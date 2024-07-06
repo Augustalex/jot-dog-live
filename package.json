@@ -3,9 +3,9 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "node ./src/dev.js",
-    "server": "node ./src/server.js",
-    "proxy": "sudo npx local-ssl-proxy --config ./ssl-config.json"
+    "live:dev": "node src/live/dev.js",
+    "live": "node src/live/server.js",
+    "docs": "node src/docs/server.js"
   },
   "devDependencies": {
     "@types/bun": "latest"
@@ -14,9 +14,11 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "@fastify/redis": "^6.2.0",
     "@hocuspocus/extension-database": "^2.13.2",
     "@hocuspocus/extension-sqlite": "^2.13.2",
     "@hocuspocus/server": "^2.13.2",
+    "fastify": "^4.28.1",
     "sqlite3": "^5.1.7"
   }
 }
