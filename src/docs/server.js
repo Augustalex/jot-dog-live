@@ -48,7 +48,7 @@ app.delete('/docs/delete', async (request, reply) => {
 const start = async () => {
     try {
         await app.listen({ port: PORT });
-        app.log.info(`Server running at http://localhost:3000/`);
+        app.log.info(`Server running at http://localhost:${PORT}/`);
     } catch (err) {
         app.log.error(err);
         process.exit(1);
